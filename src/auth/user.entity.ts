@@ -1,7 +1,8 @@
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique } from "typeorm";
 
 
 @Entity()
+@Unique(['username']) //xử lí vấn đề bị trùng lặp username 
 export class User extends BaseEntity{
 
   @PrimaryGeneratedColumn()

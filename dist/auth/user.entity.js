@@ -25,7 +25,8 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "password", void 0);
 User = __decorate([
-    typeorm_1.Entity()
+    typeorm_1.Entity(),
+    typeorm_1.Unique(['username'])
 ], User);
 exports.User = User;
 //# sourceMappingURL=user.entity.js.map
