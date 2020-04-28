@@ -9,6 +9,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
 const user_entity_1 = require("./user.entity");
 let UserRepository = class UserRepository extends typeorm_1.Repository {
+    async signUp(authCredentiasDto) {
+        const { username, password } = authCredentiasDto;
+        const user = new user_entity_1.User();
+        user.username = username;
+        user.password = password;
+        await user.save();
+    }
 };
 UserRepository = __decorate([
     typeorm_1.EntityRepository(user_entity_1.User)
