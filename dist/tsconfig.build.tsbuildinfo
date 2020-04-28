@@ -2470,12 +2470,12 @@
         "signature": "89c5c2702aa67d1e0649595ee1158802a670f851bc20f1718f45e1b3d1fb8bad"
       },
       "../src/auth/user.entity.ts": {
-        "version": "e55d6dc772ec2a570b7b4d4d072220e33846e866860435f7cd5dcd48309e36a6",
-        "signature": "c954094fcc939529bd954e366fb8e69b3c5cbe5a07f80666938f4e0d69da7325"
+        "version": "064a4136873b3e7494bc73295886b4f24a4d266360d2873573bcc9a82e2cd796",
+        "signature": "b5be5e0651b093933af9edb617504b874ecc6fc15948c351925836ec10a24a57"
       },
       "../src/auth/user.repository.ts": {
-        "version": "50e706ea7f5542adde005dec150e5b53dcdcf2efd431fa3872aa582d7822485c",
-        "signature": "40c97d0b5c16d5374399b3f96eb498e0454b561d99ef2d405a8ee8cf537a5617"
+        "version": "3d0a08745ff5d3521d7d727ed55ccb604d40e8a8239f1a37df31bfe544cd6a84",
+        "signature": "c10ca2a70e273bfa82b539c4f13828e42dad6ed90fc964e942fdda938ccc54b7"
       },
       "../src/auth/auth.service.ts": {
         "version": "5d0bc3c891d6bffb700266873a55f38d946048dd8b76a89309606af193f9fe6a",

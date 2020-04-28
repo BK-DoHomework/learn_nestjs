@@ -2,15 +2,18 @@ import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, Unique } from "type
 
 
 @Entity()
-@Unique(['username']) //xử lí vấn đề bị trùng lặp username 
-export class User extends BaseEntity{
+@Unique(['username']) //xử lí vấn đề bị trùng lặp username
+export class User extends BaseEntity {
 
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  username:string;
+  username: string;
 
   @Column()
-  password:string;
+  password: string;
+
+  @Column()
+  salt: string;
 }
