@@ -2470,20 +2470,20 @@
         "signature": "89c5c2702aa67d1e0649595ee1158802a670f851bc20f1718f45e1b3d1fb8bad"
       },
       "../src/auth/user.entity.ts": {
-        "version": "064a4136873b3e7494bc73295886b4f24a4d266360d2873573bcc9a82e2cd796",
-        "signature": "b5be5e0651b093933af9edb617504b874ecc6fc15948c351925836ec10a24a57"
+        "version": "e245927005a8d48763a2966d0b35b4185b7118ebf7fceb95bd6ac5ef3bd7bff6",
+        "signature": "590c17d1e19b3e0f7d427e395e1dc23eed75a6ff6b65dc84e56d284ccf25a136"
       },
       "../src/auth/user.repository.ts": {
-        "version": "3d0a08745ff5d3521d7d727ed55ccb604d40e8a8239f1a37df31bfe544cd6a84",
-        "signature": "c10ca2a70e273bfa82b539c4f13828e42dad6ed90fc964e942fdda938ccc54b7"
+        "version": "093d7802853b312de72f2dd0787ed8a16663011679ddf4064d56597f051ab487",
+        "signature": "200ee7fd300c094b74fa215f8ab705b2773763272121f388ac6a1fd344e5fa07"
       },
       "../src/auth/auth.service.ts": {
-        "version": "5d0bc3c891d6bffb700266873a55f38d946048dd8b76a89309606af193f9fe6a",
-        "signature": "20613ba3eddbc1307aee4794514bfd754f6c7f50e0a95171c96f6b43216763cf"
+        "version": "88d86741fbb320b412932811430ac134954159cad38da352d693e59a03bc107d",
+        "signature": "58c38c8822ff09648015c11e0861facfbc40f44db7089a2d8a7bc30bc9ab6d99"
       },
       "../src/auth/auth.controller.ts": {
-        "version": "355f67b74d34313a2858fdbb73f4106f248daefea12b8c7fa80f34fff0df2bd6",
-        "signature": "ecf67e9aa8c58f3d6a546cb78897f47848dc532a683435a934ec90ff10eb9966"
+        "version": "e92f1376f33aa599a00d2aae01608fb012db981f527f245ab1a69bca2a41f059",
+        "signature": "81876546a67e0e08f7ab8d48be3d64053409d91d792ced884b89550a5d652c8c"
       },
       "../src/auth/auth.module.ts": {
         "version": "e2421bd59a6567c244794e5c4766058cda5847b6b4ad34c2373c13623e9094fe",
@@ -16058,7 +16058,7 @@
       "../src/tasks/tasks.module.ts",
       "../src/config/typeorm.config.ts",
       "../src/auth/dto/auth-credentials.dto.ts",
-      "../src/auth/user.entity.ts",
+      "../src/auth/user.repository.ts",
       "../src/auth/auth.service.ts",
       "../src/auth/auth.controller.ts",
       "../src/auth/auth.module.ts",
@@ -16194,7 +16194,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/auth/user.repository.ts"
+      "../src/auth/user.entity.ts"
     ]
   },
   "version": "3.8.3"

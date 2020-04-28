@@ -10,7 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
+const bcrypt = require("bcrypt");
 let User = class User extends typeorm_1.BaseEntity {
+    async validatePassword(password) {
+        const hash = await bcrypt.hash(password, this.salt);
+        return hash === this.password;
+    }
 };
 __decorate([
     typeorm_1.PrimaryGeneratedColumn(),
