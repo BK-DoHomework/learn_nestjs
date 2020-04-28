@@ -2465,8 +2465,28 @@
         "version": "ec64b5b2a0a38c1381143ef2a8dcd4c8a3d32cf700e392588a8636564fcafb3e",
         "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847"
       },
+      "../src/auth/auth.controller.ts": {
+        "version": "1b6c96764a4637de8b098ab8059ca321d1e6e51138df7b6e0491acc1f4242779",
+        "signature": "7c02fe0a4fc883c06b00d29d824c931f5e0314ba07bc26d074b27feb0aecd2b3"
+      },
+      "../src/auth/user.entity.ts": {
+        "version": "5baa1498aff69294dea8fd54a2e8a8ab0481518233497ca94d6844f82ae3fdd6",
+        "signature": "c954094fcc939529bd954e366fb8e69b3c5cbe5a07f80666938f4e0d69da7325"
+      },
+      "../src/auth/user.repository.ts": {
+        "version": "00f0486105bbf795b4c497acf06a6e1054d0ebd6d6df880eeddb6e1613971915",
+        "signature": "b6a81a1678e0d82511ac98867f897d17bd4cfbc94ec9d90a4b1c5214e79d926a"
+      },
+      "../src/auth/auth.service.ts": {
+        "version": "149edd946794c33e04a52f2b6a6a40068427b2d619f72c8016acde970ecd6b8f",
+        "signature": "c4a6420d47d546344df04db798bd62f0db5c33e989924044b420a63b96d3fccb"
+      },
+      "../src/auth/auth.module.ts": {
+        "version": "e2421bd59a6567c244794e5c4766058cda5847b6b4ad34c2373c13623e9094fe",
+        "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1"
+      },
       "../src/app.module.ts": {
-        "version": "90c930fcd5440c147ac8dc6aeb29a67c1a4dddffa45438313df89b056a09cf7d",
+        "version": "e227707a15fed1f6a9b2fd48e8b55aece0cdc8c8c52b9c407427a28bfd8d3a94",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -8170,11 +8190,54 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/auth/auth.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/user.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/user.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/user.repository.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/auth/auth.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.controller.ts",
+        "../src/auth/auth.service.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../src/auth/user.repository.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/tasks/tasks.module.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../src/config/typeorm.config.ts",
+        "../src/auth/auth.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -14322,6 +14385,16 @@
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
+      "../src/auth/user.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/auth/user.repository.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/auth/user.entity.ts"
+      ],
+      "../src/auth/auth.service.ts": [
+        "../src/auth/user.repository.ts"
+      ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/common/interfaces/index.d.ts",
@@ -15948,6 +16021,7 @@
       "../node_modules/typeorm/util/PromiseUtils.d.ts",
       "../node_modules/typeorm/index.d.ts",
       "../src/tasks/task.entity.ts",
+      "../src/tasks/task.repository.ts",
       "../node_modules/@nestjs/typeorm/dist/common/typeorm.decorators.d.ts",
       "../node_modules/@nestjs/typeorm/dist/common/typeorm.utils.d.ts",
       "../node_modules/@nestjs/typeorm/dist/common/index.d.ts",
@@ -15961,6 +16035,10 @@
       "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
       "../src/config/typeorm.config.ts",
+      "../src/auth/auth.controller.ts",
+      "../src/auth/user.entity.ts",
+      "../src/auth/user.repository.ts",
+      "../src/auth/auth.module.ts",
       "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
@@ -16093,7 +16171,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/tasks/task.repository.ts"
+      "../src/auth/auth.service.ts"
     ]
   },
   "version": "3.8.3"
