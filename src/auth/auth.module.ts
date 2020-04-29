@@ -3,12 +3,12 @@ import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserRepository } from './user.repository';
-import {JwtModule} from '@nestjs/jwt';
-import {PassportModule} from '@nestjs/passport'
+import { JwtModule } from '@nestjs/jwt';
+import { PassportModule } from '@nestjs/passport'
 import { JwtStrategy } from './jwt-strategy';
 
 @Module({
-  imports:[
+  imports: [
     PassportModule.register({ defaultStrategy: 'jwt' }), //set up JWT and passport
     JwtModule.register({
       secret: 'topSecret51',
@@ -23,9 +23,9 @@ import { JwtStrategy } from './jwt-strategy';
     AuthService,
     JwtStrategy
   ],
-  exports:[
+  exports: [
     JwtStrategy,
     PassportModule
   ]
 })
-export class AuthModule {}
+export class AuthModule { }

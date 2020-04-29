@@ -17,6 +17,8 @@ export class AuthService {
     return await this.userRepository.signUp(authCredentialsDto);
   }
 
+  //https://github.com/nestjs/jwt
+  //https://github.com/nestjs/passport
   async signIn(authCredentialsDto: AuthCredentialsDto): Promise<{ accessToken: string }> {
 
     const username = await this.userRepository.validateUserPassword(authCredentialsDto);
@@ -26,7 +28,6 @@ export class AuthService {
     }
     const payload: JwtPayload = { username };
     const accessToken = await this.jwtService.sign(payload);
-
     return { accessToken };
 
   }
