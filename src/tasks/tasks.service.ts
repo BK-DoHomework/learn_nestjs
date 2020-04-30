@@ -55,8 +55,8 @@ export class TasksService {
     }
   }
 
-  //http://typeorm.delightful.studio/classes/_repository_repository_.repository.html#delete
-  //http://typeorm.delightful.studio/classes/_repository_repository_.repository.html#remove
+  // http://typeorm.delightful.studio/classes/_repository_repository_.repository.html#delete
+  // http://typeorm.delightful.studio/classes/_repository_repository_.repository.html#remove
   // http://typeorm.delightful.studio/classes/_repository_repository_.repository.html#delete
   // http://typeorm.delightful.studio/classes/_repository_repository_.repository.html#remove
 
