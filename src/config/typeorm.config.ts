@@ -1,13 +1,29 @@
-import { TypeOrmModuleOptions } from '@nestjs/typeorm'
+// import { TypeOrmModuleOptions } from '@nestjs/typeorm'
 
-//cấu hình để kết nối database
+// //cấu hình để kết nối database
+// export const typeOrmConfig: TypeOrmModuleOptions = {
+//   type: 'mysql',
+//   host: 'localhost',
+//   port: 3306,
+//   username: 'root',
+//   password: '',
+//   database: 'taskmanagement',
+//   entities: [__dirname + '/../**/*.entity.{js,ts}'],
+//   synchronize: true,
+// };
+
+import { TypeOrmModuleOptions } from '@nestjs/typeorm';
+import * as config from 'config';
+
+const dbConfig = config.get('db');
+
 export const typeOrmConfig: TypeOrmModuleOptions = {
-  type: 'mysql',
-  host: 'localhost',
-  port: 3306,
-  username: 'root',
-  password: '',
-  database: 'taskmanagement',
+  type: dbConfig.type,
+  host: process.env.DB_HOST || dbConfig.host,
+  port: process.env.DB_PORT || dbConfig.port,
+  username: process.env.DB_USERNAME || dbConfig.username,
+  password: process.env.DB_PASSWORD || dbConfig.password,
+  database: process.env.DB_DATABASE || dbConfig.database,
   entities: [__dirname + '/../**/*.entity.{js,ts}'],
-  synchronize: true,
+  synchronize: dbConfig.synchronize,
 };
